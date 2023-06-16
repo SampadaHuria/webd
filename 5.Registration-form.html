@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 align="center">Registration form</h1>
+    <center>
+        <fieldset style="width:50%";>
+        <legend>Personal Details</legend>
+        <form align="center">
+            <label><b>FULL NAME:</b></label>
+            <input type="text",name="full_name"placeholder="Enter your full name" required>
+            <br><br>
+            <label><b>EMAIL:</b></label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <label><b>PASSWORD:</b></label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+            <center>
+                <fieldset style="width:90%;">
+                <legend align="left">FAVOURITE DETAIL</legend>
+                <label><b>FAVOURITE COLOR:</b></label>
+                <input type="radio" name="color" value="b">Blue
+                <input type="radio" name="color" value="r">Red
+                <input type="radio" name="color" value="g">Green
+                <input type="radio" name="color" value="y">Yellow
+                <input type="radio" name="color" value="p">Pink
+                <br>
+                <label><b>FAVOURITE DAY:</b></label>
+                <input type="checkbox" name="day" value="mon">Monday
+                <input type="checkbox" name="day" value="mon">Tuesday
+                <input type="checkbox" name="day" value="mon">Wednesday
+                <input type="checkbox" name="day" value="mon">Thursday
+                <input type="checkbox" name="day" value="mon">Friday
+                <input type="checkbox" name="day" value="mon">Saturday
+                <input type="checkbox" name="day" value="mon">Sunday
+                </fieldset>
+            </center>
+            <br><br>
+            <label><b>FAVOURITE MONTH:</b></label>
+            <select name="month">
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="mar">March</option>
+                <option value="apr">April</option>
+                <option value="may">May</option>
+                <option value="jun">June</option>
+                <option value="july">July</option>
+                <option value="aug">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        </fieldset>
+    </center>
+</body>
+</html>

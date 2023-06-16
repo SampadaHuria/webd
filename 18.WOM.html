@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window Object Model</title>
+    </head>
+    <body>
+        <button onclick="alt()">Alert</button>
+        <button onclick="cnf()">Confirm</button>
+        <button onclick="pmt()">Prompt</button>
+        <button onclick="opn()">Open</button>
+        <button onclick="cls()">Close</button><br><br>
+        <h2 id="h21"></h2>
+        <h2 id="h22"></h2>
+        <script>
+            let wind;
+            function alt()
+            {
+                alert("This is an alert!");
+            }
+            function cnf()
+            {
+                confirm("Is this a confirm question?");
+            }
+            function pmt()
+            {
+                let p = prompt("What is your name?");
+                if(p!=null)
+                {
+                    document.getElementById("h22").innerHTML = "Hello! "+p+"."
+                }
+            }
+            function opn()
+            {
+                wind = open("ques11.html","","height=100px","width=100px");
+            }
+            function cls()
+            {
+                wind.close();
+            }
+            const mtmo = setTimeout(greet,5000);
+            function greet()
+            {
+                document.getElementById("h21").innerHTML = "Hello This is a timed greeting!";
+            }
+        </script>
+    </body>
+</html>
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 align = "center">Application Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Detail</legend>
+            <label><b>Full Name:</b></label>
+            <select name = "title">
+                <option value = "Mr">Mr.</option>
+                <option value="Mr">Ms.</option>
+                <option value="Mr">Mrs.</option>
+            </select>
+            <input type = "text" name = "full_name" required>
+            <br><br>
+            <label><b>Father's Name:</b></label>
+            <input type="text" name="father_name" required>
+            <br><br>
+            <label><b>Gender:</b></label>
+            <input type = "radio" name = "gender" value="m">Male
+            <input type="radio" name="gender" value="f">Female
+            <input type="radio" name="gender" value="o">Other
+            <br><br>
+            <label><b>Marital Status:</b></label>
+                <select name="mar_status">
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                </select>
+            <br><br>    
+            <label><b>Date of Birth:</b></label>
+            <input type = "date">
+            <br><br>
+            <label><b>Category:</b></label>
+            <select name="Category">
+                <option value="gen">General</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="OBC">OBC</option>
+            </select>
+        </fieldset> <br>
+        <fieldset>
+            <legend>Contact Detail</legend>
+            <label><b>Mobile No.:</b></label>
+            <input type="text" name="mob_no" required>
+            <br><br>
+            <label><b>Address:</b></label>
+            <input type="text" name="address" required>
+            <br><br>
+            <label><b>City:</b></label>
+            <input type="text" name="city" required>
+            <br><br>
+            <label><b>Pincode:</b></label>
+            <input type="text" name="pincode" required>
+            <br><br>
+            <label><b>Email ID:</b></label>
+            <input type="email" name="email" required>
+            <br><br>
+            <label><b>State:</b></label>
+            <select name="state">
+                <option value="raj">Rajasthan</option>
+                <option value="guj">Gujarat</option>
+                <option value="mah">Maharastra</option>
+                <option value="utr">Uttarkhand</option>
+            </select>
+        </fieldset><br>
+        <fieldset>
+            <legend>Qualification Detail</legend>
+            <table border = "1px">
+                <tr>
+                    <th>S.NO.</th>
+                    <th>Qualification</th>
+                    <th>Board</th>
+                    <th>Passing Year</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                    <select name="qual1">
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                        <option value="under">Under Graduate</option>
+                        <option value="post">Post Graduate</option>
+                    </select>
+                    </td>
+                    <td><input type = "text" name = "board1"></td>
+                    <td><input type="text" name="pass1"></td>
+                    <td><input type="text" name="perc1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <select name="qual2">
+                            <option value="10th">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="under">Under Graduate</option>
+                            <option value="post">Post Graduate</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="board2"></td>
+                    <td><input type="text" name="pass2"></td>
+                    <td><input type="text" name="perc2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <select name="qual3">
+                            <option value="10th">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="under">Under Graduate</option>
+                            <option value="post">Post Graduate</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="board3"></td>
+                    <td><input type="text" name="pass3"></td>
+                    <td><input type="text" name="perc3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <select name="qual4">
+                            <option value="10th">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="under">Under Graduate</option>
+                            <option value="post">Post Graduate</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="board4"></td>
+                    <td><input type="text" name="pass4"></td>
+                    <td><input type="text" name="perc4"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Languages Known</legend>
+            <label><b>Languages:</b></label>
+            <input type = "checkbox" name = "lan" value = "hindi">Hindi
+            <input type="checkbox" name="lan" value="eng">English
+            <input type="checkbox" name="lan" value="both">Both
+        </fieldset><br>
+        <fieldset>
+            <legend>Identification Detail</legend>
+            <label><b>Aadhar Card No.:</b></label>
+            <input type="text" name="mob_no" required>
+            <br><br>
+            <label><b>PAN Card No.:</b></label>
+            <input type="text" name="address" required>
+        </fieldset><br>
+        <input type = "submit" value = "submit">
+        <input type = "reset" value = "reset">    
+    </form>
+</body>
+</html> 
